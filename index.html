@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMES</title>
+    <link rel="stylesheet" href="games.css">
+    <link rel="stylesheet" href="hamburger.css">
+</head>
+<body>
+    <section id="navcontainer">
+        <nav id="navmain">
+            <div id="navhead">
+                <h2><span>Games</span>Store</h2>
+            </div>
+            <div id="navlinks">
+                <ul class="navbarlinks">
+                    <li><a href="#">Top Rated</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Best Of All</a></li>
+                    <li><a href="#">Browse</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <nav id="hamburger-nav">
+        <div class="logo"><span>Games</span>Store</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#" onclick="toggleMenu()">Top Rated</a></li>
+            <li><a href="#" onclick="toggleMenu()">Trending</a></li>
+            <li><a href="#" onclick="toggleMenu()">Best Of All</a></li>
+            <li><a href="#" onclick="toggleMenu()">Browse</a></li>
+          </div>
+        </div>
+      </nav>
+
+    <div id="bannercontainer">
+        <div id="bannerimg" style="background-image: url();">
+            <!-- <div id="bannerimg"> 
+                 <img src="#" id="imgbanner" alt="Awesomeness Loading..."> -->
+                <div id="info">
+                <h1></h1>
+                <h4></h4>
+                <p></p>
+                <div id="btns">
+                <button id="play">Play</button>
+                <button id="sys">System Requirements</button>
+            </div>
+                </div>
+            </div>
+        </div>
+    <section id="imgcontainer">
+        <h2>Games</h2>
+        <div id="imgs">
+        </div>
+    </section>
+
+    <section id="actioncontainer">
+        <h2>Action Games</h2>
+        <div id="imgs">
+        </div>
+    </section>
+
+    <section id="racingcontainer">
+        <h2>Racing Games</h2>
+        <div id="imgs">
+        </div>
+    </section>
+
+    <section id="horrorcontainer">
+        <h2>Horror Games</h2>
+        <div id="imgs">
+        </div>
+    </section>
+
+    <section id="zombiecontainer">
+        <h2>Zombie Games</h2>
+        <div id="imgs">
+        </div>
+    </section>
+    <script src="games.js"></script>
+    <script src="hamburger.js"></script>
+</body>
+</html>

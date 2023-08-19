@@ -1,0 +1,203 @@
+ body{
+    background-color: black;
+    color: white;
+    left: 0;
+    top: 0;
+    font-family: "Poppins",sans-serif;
+}
+#navmain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bolder;
+    /* flex-wrap: wrap; */
+}
+span{
+    color: yellow;
+}
+.navbarlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+li,a{
+    text-decoration: none;
+    list-style: none;
+    color: wheat;
+    font-size: 1.5rem;
+    animation-name: cchange;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+@keyframes cchange {
+    from{text-decoration: underline;
+        text-underline-offset: 1.3rem;
+    text-decoration-color:yellow ;}
+}
+a:hover{
+    text-decoration: underline;
+    text-underline-offset: 1.5rem;
+    text-decoration-color:yellow ;
+}
+#imgs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    cursor: pointer;
+    transition: transform ease-in 1s;
+}
+img:hover{
+    transform: scale(1.1);
+}
+ *::-webkit-scrollbar{
+    display: none;          
+} 
+#bannerimg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    min-width: 210vh;
+    padding:1rem 1rem;
+    filter: brightness(45%);
+}
+#bannercontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+} 
+#info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+    font-weight: bolder; 
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    outline: none;
+    border: none;
+}
+#info h1{
+    font-size: 6rem;
+    color:yellow;
+}
+#info h4{
+    margin-top: -2rem;
+    font-size: 2rem;
+    color: yellow;
+}
+#info p{
+    margin-top: -0.2rem;
+    font-size: larger;
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    width: 40%;
+    border-radius: 0.9rem;
+}
+#btns{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+#info button{
+    padding: 1rem 1rem;
+    font-size: larger;
+    background-color: white;
+    color: black;
+    border-radius: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#play{
+    width: 10%;
+}
+#sys{
+    width: 30%;
+}
+h2{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+@media screen and (max-width:1000px){
+    body{
+        overflow-x: auto;
+    }
+    #imgs{
+    overflow-x:auto;
+    }
+    #imgcontainer,#actioncontainer,#racingcontainer,#horrorcontainer,#zombiecontainer{
+        min-width: 149vh;
+    }
+    #bannercontainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #bannerimg{
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+        min-height: 100vh;
+        min-width: 240vh;
+    }
+    #info{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:flex-end;
+        text-align: center;
+    }
+    #info h1{
+        font-size: 2rem;
+    }
+    #info h4{
+        font-size: 2rem;
+    }
+    #info p{
+        font-size: 2rem;
+    }
+    #info button{
+        width: 70%;
+        font-weight: bold;
+        font-size: 2rem;
+        padding: 10px 7px;
+    }
+
+}
+@media screen and (max-width:348px){
+    #bannerimg{
+        min-width: 250vh;
+    }
+}
+
+
+
+
+
+
+
+/* 
+#bannerimg{
+    height: 45rem;
+} 
+
+  #imgbanner{
+    height: 45rem;
+    width: 94.5rem;
+    filter: brightness(50%);
+    filter: contrast(70%); 
+    border: none;
+    outline: none;
+}  */
